@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rajeshkumaran/ally-okr.git"
+    "url": "git+https://github.com/Rajeshkumaran/ally-okr-assessment.git"
   },
   "author": "Rajesh K",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rajeshkumaran/ally-okr.git/issues"
+    "url": "https://github.com/Rajeshkumaran/ally-okr-assessment.git/issues"
   },
-  "homepage": "https://github.com/Rajeshkumaran/ally-okr.git#readme",
+  "homepage": "https://github.com/Rajeshkumaran/ally-okr-assessment.git#readme",
   "dependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
