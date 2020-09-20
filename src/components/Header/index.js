@@ -22,13 +22,11 @@ const LogoWrap = styled("div")`
   width: 10rem;
   position: absolute;
   left: 10rem;
+  @media (max-width: 992px) {
+    margin: 0 1rem;
+  }
 `;
-const BasicLi = styled("li")`
-  color: #000;
-  font-size: 1.6rem;
-  font-family: ${MontserratBold};
-  text-align: center;
-`;
+
 const LogoImg = styled("img")`
   width: 100%;
   height: 100%;
@@ -40,7 +38,6 @@ export default class Header extends React.Component {
         <LogoWrap>
           <LogoImg src="https://assets-global.website-files.com/5d8e324474cf44070af9c56b/5da7bebcfbe3aa081c5e6289_logo.svg" />
         </LogoWrap>
-        <BasicLi>OKR assessment</BasicLi>
       </Wrap>
     );
   }

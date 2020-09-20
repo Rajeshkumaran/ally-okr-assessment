@@ -7,9 +7,21 @@ const selectDataLoadedState = (state) => {
 };
 const isErrorLoadingData = (state) =>
   get(state, "homePage.isErrorLoadingData", false);
+const selectOkrsData = (state) => get(state, "homePage.okrData", []);
+const selectCategories = (state) => get(state, "homePage.categories", []);
+const selectFilteredOkrs = (category) => (state) => {
+  const okrData = selectOkrsData(state);
+  return okrData.filter((okr) => {
+    const parentCategory = get(okr, "parent.category", "");
+    return category === parentCategory;
+  });
+};
 export {
   selectAppState,
   selectHomePageState,
   selectDataLoadedState,
   isErrorLoadingData,
+  selectOkrsData,
+  selectCategories,
+  selectFilteredOkrs,
 };

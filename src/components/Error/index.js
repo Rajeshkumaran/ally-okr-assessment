@@ -13,3 +13,4 @@ function Error({ errorText }) {
 Error.propTypes = {
   errorText: PropTypes.string,
 };
+export default Error;

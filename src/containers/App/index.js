@@ -8,6 +8,9 @@ const Wrap = styled("div")`
   background: #e9e9e9;
   height: 100%;
   margin-top: 6.4rem;
+  @media (max-width: 992px) {
+    margin-top: 4rem;
+  }
 `;
 class App extends React.Component {
   render() {

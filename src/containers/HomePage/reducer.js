@@ -1,4 +1,4 @@
-import { get } from "../../utils/helpers";
+import { findCategories, formatOkrData } from "../../utils/helpers";
 import {
   TOGGLE_LOADED_DATA_STATE,
   TOGGLE_ERROR_STATE,
@@ -8,7 +8,7 @@ import {
 export const initialState = {
   isDataLoaded: false,
   isErrorLoadingData: false,
-  okrsData: [],
+  okrData: [],
 };
 const reducer = (preloadedState = null) => (
   state = preloadedState || initialState,
@@ -16,9 +16,13 @@ const reducer = (preloadedState = null) => (
 ) => {
   switch (action.type) {
     case LOAD_OKRS: {
+      const payload = action.payload;
+      const formattedOkrs = formatOkrData(payload);
+      const categories = findCategories(payload);
       return {
         ...state,
-        okrsData: [],
+        okrData: formattedOkrs,
+        categories,
       };
     }
     case TOGGLE_LOADED_DATA_STATE: {

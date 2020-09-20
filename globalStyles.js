@@ -14,7 +14,7 @@ html {
   }
   
   body {
-    font-size: 1.4rem;
+    font-size: 10px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     overflow-x:hidden ;
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);

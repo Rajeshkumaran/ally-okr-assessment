@@ -1,6 +1,6 @@
 ### Ally OKR assessment
 
-To implement a OKR assessment for allyc.
+To implement a OKR assessment for ally.
 
 ### To run in development:
 
