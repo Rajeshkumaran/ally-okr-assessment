@@ -24,7 +24,6 @@ const PramsWrap = styled("div")`
 `;
 function ObjectiveInfoPopup({ info, close = () => {} }) {
   const showInfo = () => {
-    console.log("info", info);
     return Object.keys(info).map((obj, index) => (
       <PramsWrap key={`${obj}-${index}`}>
         <ParamType

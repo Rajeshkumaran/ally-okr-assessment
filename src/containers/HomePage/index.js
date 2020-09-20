@@ -68,7 +68,6 @@ class HomePage extends React.Component {
     const { activeDropDownIndex } = this.state;
     const category = categories[activeDropDownIndex] || "";
     const filteredOkrs = selectFilteredOkrs(category);
-    console.log("filteredOkrs", filteredOkrs);
     return filteredOkrs.map((okr, index) => {
       const title = get(okr, "parent.title", "");
       const childObjectives = get(okr, "childObjectives", []);
@@ -100,7 +99,6 @@ class HomePage extends React.Component {
     });
   };
   render() {
-    console.log("Ths.props", this.props);
     const {
       isdataLoaded,
       errorInLoadingData = false,
